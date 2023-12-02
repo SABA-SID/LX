@@ -177,8 +177,8 @@ logo=(f"""\033[1;37m
  \033[1;32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mAuthor  : OUSSAMA 
  \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mGithub  : SABA-SID
- \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mService : PIDE
- \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mVersion : \033[1;32m1.1
+ \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mService : FREE
+ \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mVersion : \033[1;32m1.2
  \033[1;32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~""")
 def linex():
     print('\033[1;32m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
@@ -1148,7 +1148,7 @@ def Create():
                  print("\r\r\033[1;32m [BOSS-OK] "+uid+'|'+pas+'|'+coki)
                  linex()
                  ok+=1
-                 open("/sdcard/BOSS/AUTO-OK.txt","a").write(uid+"|"+pas+"|"+coki+"\n")
+                 open("/sdcard/SITE/AUTO-OK.txt","a").write(uid+"|"+pas+"|"+coki+"\n")
                 
        except Exception as e:
            if not "urllib" and not "perma" in str(e):print(e)
