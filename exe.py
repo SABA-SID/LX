@@ -15,9 +15,9 @@ try:
 except ModuleNotFoundError: 
     print('\n Installing missing modules ...')
     os.system('pip install requests bs4 futures==2 > /dev/null')
-    os.system('python BOSS.py')
+    os.system('python EXE.py')
 try:
-    os.mkdir('/sdcard/BOSS')
+    os.mkdir('/sdcard/EXE')
 except:pass
 import os
 import sys
@@ -178,7 +178,7 @@ logo=(f"""\033[1;37m
  \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mAuthor  : OUSSAMA 
  \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mGithub  : SABA-SID
  \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mService : FREE
- \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mVersion : \033[1;32m1.2
+ \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mVersion : \033[1;32m1.3
  \033[1;32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~""")
 def linex():
     print('\033[1;32m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
@@ -481,7 +481,7 @@ def api1(ids,names,passlist):
                 dimensions = __iam_genius.split('|')[2]
                 ffb=random.choice(fbks)
                 dvlk = random.choice(usr)
-                ua_string = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,318)) +";FBBV/"+str(random.randint(11111111,77777777))+";[FB4A/;FBAV/;FBBV/212298270;FBAN/FB4A;FBAV/;FBBV/212298270;FBDM//*{density=1.5,width=1920,height=1920};FBLC/ru_RU;FBRV/915649653;FBCR/Nokia;FBMF/Xiaomi;FBBD/QMobile;FBPN/com.facebook.katana;FBDV/SM-N980BDS;FBSV/16;FBOP/4;FBCA/x86_64;FBSS/12;]"+"[FB4A/;FBAV/YZWSES93;FBBV/210685734;FBAN/FB4A;FBAV/YZWSES93;FBBV/210685734;FBDM//*{density=3.0,width=1080,height=3840};FBLC/ru_RU;FBRV/400958793;FBCR/TECNO;FBMF/OnePlus;FBBD/Infinix;FBPN/com.facebook.katana;FBDV/Vivo_Y120s;FBSV/16;FBOP/7;FBCA/arm64-v8a;FBSS/10;]"+"[FB4A/;FBAV/YZWSES93;FBBV/456776686;FBAN/FB4A;FBAV/YZWSES93;FBBV/456776686;FBDM//*{density=2.0,width=1080,height=4096};FBLC/ja_JP;FBRV/348548451;FBCR/Nokia;FBMF/Motorola;FBBD/itel;FBPN/com.facebook.katana;FBDV/Vivo_Y93s;FBSV/14;FBOP/4;FBCA/x86_64;FBSS/;]"+"[FB4A/;FBAV/YZWSES93;FBBV/994080004;FBAN/FB4A;FBAV/YZWSES93;FBBV/994080004;FBDM//*{density=2.5,width=1080,height=2560};FBLC/es_ES;FBRV/872977912;FBCR/TECNO;FBMF/Motorola;FBBD/Lephone;FBPN/com.facebook.katana;FBDV/Realme_X8;FBSV/15;FBOP/7;FBCA/x86_64;FBSS/;]"+"[FBAN/;FBAV/4Q095MQG;FBBV/118023388;FBAN/FBAN;FBAV/4Q095MQG;FBBV/118023388;FBDM//*{density=1.5,width=720,height=3840};FBLC/zh_CN;FBRV/252314643;FBCR/Nokia;FBMF/VIVO;FBBD/Oppo;FBPN/com.facebook.katana;FBDV/OnePlus_9;FBSV/14;FBOP/6;FBCA/x86;FBSS/;]"+"[FB4A/;FBAV/A1XDL5U4;FBBV/397279921;FBAN/FB4A;FBAV/A1XDL5U4;FBBV/397279921;FBDM//*{density=2.0,width=1920,height=2560};FBLC/it_IT;FBRV/119326691;FBCR/LG;FBMF/VIVO;FBBD/HTC;FBPN/com.facebook.katana;FBDV/iPhone12,8;FBSV/17;FBOP/6;FBCA/armeabi;FBSS/;]"+"[FBAN/;FBAV/4Q095MQG;FBBV/634092336;FBAN/FBAN;FBAV/4Q095MQG;FBBV/634092336;FBDM//*{density=1.5,width=1440,height=3840};FBLC/ja_JP;FBRV/726317350;FBCR/Nokia;FBMF/OnePlus;FBBD/QMobile;FBPN/com.facebook.katana;FBDV/Oppo_Reno_15;FBSV/11;FBOP/4;FBCA/x86_64;FBSS/10;]"+"[FBAN/;FBAV/YZWSES93;FBBV/220198505;FBAN/FBAN;FBAV/YZWSES93;FBBV/220198505;FBDM//*{density=1.5,width=1920,height=3840};FBLC/ru_RU;FBRV/269124642;FBCR/LG;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/Samsung_Galaxy_A52;FBSV/15;FBOP/4;FBCA/arm64-v8a;FBSS/;]"
+                ua_string = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,318)) +";FBBV/"+str(random.randint(11111111,77777777))+";[FBAN/;FBAV/A1XDL5U4;FBBV/592552223;FBAN/FBAN;FBAV/A1XDL5U4;FBBV/592552223;FBDM//*{density=2.5,width=720,height=1280};FBLC/ru_RU;FBRV/958044159;FBCR/Nokia;FBMF/OnePlus;FBBD/Tecno;FBPN/com.facebook.katana;FBDV/LG_Q14;FBSV/11;FBOP/4;FBCA/armeabi-v7a;FBSS/;]" 
                 li = ['28','29','210']
                 li2 = random.choice(li)
                 j1 = ''.join(random.choice(digits) for _ in range(2))
